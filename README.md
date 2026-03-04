@@ -8,7 +8,7 @@ These guidelines are intended for partners, designers, vendors, and collaborator
 
 ## View the Live Guidelines
 
-https://YOUR-GITHUB-USERNAME.github.io/sigal-brand-guidelines/
+https://founding-kyra.github.io/sigal-brand-guidelines/
 
 ## Contents
 
