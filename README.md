@@ -7,8 +7,7 @@ The document outlines the visual identity, typography, color system, voice guide
 These guidelines are intended for partners, designers, vendors, and collaborators working with the Sigal Development brand.
 
 ## View the Live Guidelines
-
-https://founding-kyra.github.io/sigal-brand-guidelines/
+https://founding-kyra.github.io/sigal-guidelines/
 
 ## Contents
 
