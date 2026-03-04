@@ -262,6 +262,38 @@ footer .f-note { font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; co
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 @media (max-width: 680px) { .two-col { grid-template-columns: 1fr; } }
 .text-muted { color: var(--muted); font-size: 0.85rem; }
+
+  /* ─────────────────────────────
+   MOBILE PATCH
+   ───────────────────────────── */
+body { overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 520px) {
+  /* NAV: less cramped */
+  nav { padding: 0 1rem; }
+  .nav-brand { display: none; } /* frees space on small screens */
+  nav a { padding: 0.85rem 0.55rem; font-size: 0.62rem; }
+
+  /* HERO: reduce “giant poster” effect */
+  .hero { padding: 6.25rem 1rem 3.25rem; }  /* was 8rem/2rem/5rem :contentReference[oaicite:1]{index=1} */
+  .hero-sub { font-size: 0.78rem; line-height: 1.55; }
+
+  /* SECTIONS: less side padding */
+  .section, .section-full { padding-left: 1rem; padding-right: 1rem; }
+
+  /* LOGO CARDS: tighter frames */
+  .logo-frame { min-height: 160px; padding: 1.25rem; } /* was 200px/2rem :contentReference[oaicite:2]{index=2} */
+  .logo-frame img { max-height: 140px; }
+
+  /* EMAIL SIGNATURE: stack instead of side-by-side */
+  .email-sig { flex-direction: column; }
+  .sig-divider { display: none; }
+}
+
+/* Helps long URLs / code not blow out the layout */
+code, .file-tag { word-break: break-word; }
+  
 </style>
 </head>
 <body>
